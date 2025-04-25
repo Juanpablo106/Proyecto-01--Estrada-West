@@ -242,13 +242,14 @@ public class Main {
             }
         }
     }
+
     //Omite las validaciones para los campos que no lo necesitan
     public static String leerCampoLibre(Scanner scanner, String campo) {
         System.out.println("Ingrese el " + campo + " del contacto:");
         return scanner.nextLine();
     }
 
-    //Validar que tenga la estructura correcta de una fecha
+    //Validar que tenga la estructura correcta de una fecha normal
     public static String leerFechaNacimiento(Scanner scanner) {
         while (true) {
             System.out.println("Ingrese la fecha de nacimiento del contacto (DD/MM/AAAA):");
